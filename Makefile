@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -Wall -o 
+
+SRCS = $(shell find ./src/ -name '*.c')
+SRCS += main.c
+INCLUDES = ./include
+
+all: 
+	@mkdir -p build
+	$(CC) $(SRCS) $(CFLAGS) build/main -I $(INCLUDES)
+
+clean:
+	rm -rf build
