@@ -9,6 +9,13 @@
 Notes: 
 - bus上地址来模拟，mem和io
 
+### python 工具的使用
+
+```
+uv venv
+uv pip install -r tools/requirements.txt
+uv run tools/assem.py tests/test1.asm tests/test1.bin
+```
 
 
 ## 说明
